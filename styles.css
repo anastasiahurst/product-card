@@ -1,0 +1,109 @@
+:root {
+  /* Colors */
+  --accent-color: hsl(158, 36%, 37%);
+  --body-color: hsl(30, 38%, 92%);
+  --dark-blue: hsl(212, 21%, 14%);
+  --greyish-blue: hsl(228, 12%, 48%);
+
+  /* Fonts */
+  --primary-font-family: "Montserrat", sans-serif;
+  --secondary-font-family: "Fraunces", serif;
+}
+
+body {
+  margin: 0 auto;
+  background-color: var(--body-color);
+  font-family: var(--primary-font-family);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+p {
+  color: var(--greyish-blue);
+  font-size: 14px;
+  line-height: 1.45rem;
+}
+h1 {
+  font-family: var(--secondary-font-family);
+  color: var(--dark-blue);
+  font-size: 2rem;
+  line-height: 2rem;
+  margin: 5px auto;
+}
+.card {
+  min-width: 360px;
+  margin: 28px 15px;
+  background-color: white;
+  border-radius: 10px;
+}
+.perfume_img_mobile {
+  width: 100%;
+  border-radius: 10px 10px 0px 0px;
+}
+.card_content {
+  padding: 5% 7%;
+}
+header p {
+  margin-top: 0px;
+  margin-bottom: 10px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+}
+.perfume_description {
+  margin-bottom: 0px;
+  letter-spacing: 0.03rem;
+}
+.price_container {
+  display: flex;
+  align-items: center;
+}
+.current_price {
+  color: var(--accent-color);
+  font-family: var(--secondary-font-family);
+  font-size: 2rem;
+  margin: 30px 0 23px 0;
+}
+.full_price {
+  margin-left: 15px;
+  font-size: 12px;
+  text-decoration: line-through;
+}
+.btn {
+  width: 100%;
+  background-color: var(--accent-color);
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+  border: none;
+  font-weight: 700;
+}
+.cart_img {
+  margin-right: 0.5rem;
+}
+
+@media (max-width: 649px) {
+  .perfume_img_desktop {
+    display: none;
+  }
+}
+
+@media (min-width: 650px) {
+  .card {
+    display: flex;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .perfume_img_mobile {
+    display: none;
+  }
+  .perfume_img_desktop {
+    max-width: 300px;
+    border-radius: 10px 0px 0px 10px;
+  }
+  .card_content {
+    width: 50%;
+    padding: 5% 5%;
+  }
+}
