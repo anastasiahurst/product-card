@@ -32,7 +32,7 @@ h1 {
   margin: 5px auto;
 }
 .card {
-  min-width: 360px;
+  min-width: none;
   margin: 28px 15px;
   background-color: white;
   border-radius: 10px;
@@ -78,6 +78,9 @@ header p {
   border-radius: 10px;
   border: none;
   font-weight: 700;
+}
+.btn:hover {
+  background-color: rgb(0, 44, 0);
 }
 .cart_img {
   margin-right: 0.5rem;
